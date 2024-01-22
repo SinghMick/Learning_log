@@ -11,10 +11,10 @@
             <a href = "{% url 'learning_logs:topic' topic.id%}">
             {{topic.text}} 
             </a> 
-        <li/>
+        </li>
     {% empty%}
-    <li>No topics has been added yet. </li>
+        <li>No topics has been added yet. </li>
     {% endfor%}
 </ul>
-
+      <a href="{% url 'learning_logs:new_topic' %}">Add a topic</a>
 {% endblock content%}
